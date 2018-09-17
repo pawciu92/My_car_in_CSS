@@ -1,0 +1,88 @@
+
+.image {
+    width: 150px;
+    position: relative;
+    left: 1000px;
+    top: 200px;
+    opacity: 0;
+}
+
+.car {
+    opacity:0;
+}
+.carBody {
+    position: relative;
+    // top: 50px;
+}
+
+.body {
+    height: 170px;
+    width:850px;
+    border: 1px solid $color-body;
+    position: absolute;
+    top: 129px;
+    left: 23px;
+    transform: skew(-5deg, -1.5deg);
+    border-radius: 30% 0% 0% 50%/40% 0% 0% 15%;
+    border-bottom-right-radius: 20%;
+    background: $color-body;
+
+}
+.roofFront {
+    height: 90px;
+    width:220px;
+    border: 1px solid $color-body;
+    position: absolute;
+    top: 45px;
+    left: 340px;
+    transform: skew(-40deg, -1.5deg);
+    border-radius: 290% 0% 0% 0%/450% 0% 0% 0%;
+    background: $color-body;
+
+}
+.roofBack {
+    height: 85px;
+    width:200px;
+    border: 1px solid $color-body;
+    position: absolute;
+    top: 39px;
+    left: 650px;
+    transform: skew(40deg, -1.5deg);
+    border-radius: 0% 199% 0% 0%/0% 200% 0% 0%;
+    background: $color-body;
+
+}
+.roofMiddle {
+    height: 92px;
+    width:295px;
+    border: 1px solid $color-body;
+    position: absolute;
+    top: 42px;
+    left: 425px;
+    transform: skew(0deg, -1.5deg);
+    border-radius: 50%/25%;
+    background: $color-body;
+}
+.trunk {
+    width: 100px;
+    height: 100px;
+    border: 1px solid $color-body;
+    position: absolute;
+    top :105px;
+    left: 853px;
+    border-radius: 15%/50%;
+    transform: skew(0deg, 2deg);
+    background: $color-body;
+
+}
+.backBumper {
+    width: 140px;
+    height: 97px;
+    border: 1px solid $color-body;
+    position: absolute;
+    top :184px;
+    left: 827px;
+    transform: skew(0deg, -4deg);
+    border-radius: 0% 25% 20% 0%/0% 10% 20% 0%;
+    background: $color-body;
+}

@@ -1,0 +1,74 @@
+//Wheels
+.wheels {
+    display: flex;
+    flex-direction: row;
+}
+.rightWheel {
+    // border: 1px solid red;
+    position: absolute;
+    top: 350px;
+    left: 640px;
+}
+.leftWheel {
+    // border: 1px solid blue;
+    position: absolute;
+    top: 350px;
+    left: 220px;
+}
+.tyreTread {
+    position: relative;
+    width: 95px;
+    height: 160px;
+    background: #191919;
+    border-radius: 50% / 10%;
+    display: flex;
+    justify-content: center;
+    &:before {
+        content: '';
+        position: absolute;
+        top: 9%;
+        bottom: 9%;
+        right: -5%;
+        left: -5%;
+        background: inherit;
+        border-radius: 5% / 50%;
+    }
+}
+.tread {
+  position: relative;
+  height: 160px;
+  border-radius: 50% / 10%;
+  display: flex;
+  justify-content: center;
+}
+.row1 {
+  width: 80px;
+  border: 1px dashed $color-tread;
+  border-top: none;
+  border-bottom: none;
+}
+.row2 {
+  width: 60px;
+  border: 1px solid $color-tread;
+  border-top: none;
+  border-bottom: none;
+}
+.row3 {
+  width: 40px;
+  border: 1px dashed $color-tread;
+  border-top: none;
+  border-bottom: none;
+}
+.row4 {
+  width: 20px;
+  border: 1px solid $color-tread;
+  border-top: none;
+  border-bottom: none;
+}
+.row5 {
+  border: 0.5px dashed $color-tread;
+  border-top: none;
+  border-bottom: none;
+}
+
+// Body 

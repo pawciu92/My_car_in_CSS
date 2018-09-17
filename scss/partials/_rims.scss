@@ -1,0 +1,145 @@
+.rim {
+    background: $color-rim;
+    width: 5.4em;
+    height: 5.4em;
+    box-shadow: 0px 0px 17px #000000;
+}
+.brakes {
+    background: #626262;
+    width: 4.8em;
+    height: 4.8em;
+}
+.pentagon {
+    font-size: 1.4px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.pentagon_up {
+	border-left: 11em solid transparent;
+	border-right: 11em solid transparent;
+	border-bottom: 8em solid $color-rim;
+}
+.pentagon_down {
+	width: 22em;
+	border-top: 10em solid $color-rim;
+	border-left: 5em solid transparent;
+    border-right: 5em solid transparent;
+}
+.hub {
+    width: 19px;
+    height: 18px;
+    background: $color-rim;
+    border: 0.5px solid #000;
+    margin-top: 5px;
+    box-shadow: 0px -1px 3px #000000;
+    position: absolute;
+}
+.screw1 {
+    background:#999;
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    position: absolute;
+    margin-top: -8.5px;
+}
+
+.screw2 {
+    background: $color-screw;
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    position: relative;
+    right: -15.5px;
+    top: -2px;
+}
+.screw3 {
+    background: $color-screw;
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    position: relative;
+    left: -6.5px;
+    top: -2px;
+}
+.screw4 {
+    background:$color-screw;
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    position: relative;
+    bottom: -6.5px;
+    right: -4px
+}
+.screw5 {
+    background:$color-screw;
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    position: relative;
+    left: -12px;
+    bottom: -7px;
+}
+.bearing1 {
+    border-radius:50%;
+    background: #000;
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.bearing2 {
+    border-radius:50%;
+    background: red;
+    width: 5px;
+    height: 5px;
+}
+
+.rimCircle2 {
+    border-radius: 50%;
+    border: 4px solid $color-rim;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    bottom: 37.5px;
+    left: 20px;
+}
+.rimCircle1 {
+    border-radius: 50%;
+    border: 4px solid $color-rim;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    bottom: 18px;
+    right: 50px;
+}
+.rimCircle3 {
+    border-radius: 50%;
+    border: 4px solid $color-rim;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    right: 20px;
+    bottom: 37.5px;
+}
+
+.rimCircle4 {
+    border-radius: 50%;
+    border: 4px solid $color-rim;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    bottom: 72px;
+    right: 31px;
+}
+.rimCircle5 {
+    border-radius: 50%;
+    border: 4px solid $color-rim;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    left: 31px;
+    bottom: 72px;
+}
