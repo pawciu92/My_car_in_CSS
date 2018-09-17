@@ -1,3 +1,4 @@
+- https://pawciu92.github.io/My_car_in_CSS/
 # Opis
 
 W projekcie została stworzona animowana grafika. Grafika przedstawia samochód wyjeżdżający ze strony, po wystartowaniu z wydechu wyrzucane są technologie. W drugim etapie samochód z zapalonymi światłami wjeżdza z frontu, zatrzymuje się, gasną światła, włączają się światła awaryjne w tym samym czasie otwierają się drzwi kierowcy i z wnętrza wylatują kolejne technologie.
