@@ -37,9 +37,11 @@
 }
 .mudguardFront {
     width: 7.7em;
-    height: 5.6em;
+    height: 5.55em;
     top:-6px;
     right: -147px;  
+    transform: skew(0deg, 1deg);
+
 }
 .wheel {
     background: black;
