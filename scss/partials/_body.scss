@@ -15,7 +15,7 @@
     // top: 50px;
 }
 
-// Halogen in bumper
+// Halogen in bumper and all Front
 .frontSmallBumper {
     width: 15px;
     height: 15px;
@@ -34,7 +34,7 @@
     top: 110px;
     left: 10px;
     border-radius: 40% 5% 10% 5%/5% 5% 20% 30%;
-    box-shadow: -3px 2px 15px #000000;
+    box-shadow: -5px -1px 20px #000000;
 }
 .halogenLight {
     
@@ -46,6 +46,55 @@
     top: 2px;
     left: 16px;
     border-radius: 50% 0% 0% 50%/50% 0% 0% 50%;
+}
+.bumperShadow {
+    width:121px;
+    height: 10px;
+    background-image: linear-gradient(to left, #800000, #7c0000, #780000, #740000, #700000);    position: absolute;
+    top: 148px;
+    left: -4px;
+    transform: skew(-12deg, 4deg);
+    border-radius: 0% 0% 0% 40%/0% 0% 0% 100%;
+    .bumperShadow2 {
+        width:50px;
+        height: 35px;
+        position: absolute;
+        top: -34px;
+        left:21px;
+        border-bottom: 20px solid #750000;
+        border-left: 58px solid transparent;
+        transform: skew(-45deg);
+        .bumperShadow3 {
+            width: 60px;
+            height: 8px;
+            background: $color-body;
+            position: relative;
+            left: -60px;
+            top: 18px;
+            transform: skew(50deg, -26deg);
+            border-radius: 0% 0% 80% 150% / 0% 0% 50% 250%;
+        }
+    }
+}
+// Between wheels
+.doorStep {
+    width: 420px;
+    height: 15px;
+    background: #600000;
+    position: absolute;
+    top: 153.5px;
+    left: 269.5px;
+    border-top: 13px solid #780000;
+    border-left: 380px solid transparent;
+}
+.doorStep2 {
+    width: 440px;
+    height: 10px;
+    position: absolute;
+    top: 158.5px;
+    left: 269.5px;
+    border-bottom: 10px solid #780000;
+    border-right: 420px solid transparent;
 }
 
 // All car body
