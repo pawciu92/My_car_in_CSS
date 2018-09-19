@@ -49,7 +49,9 @@
 .bumperShadow {
     width:121px;
     height: 10px;
-    background-image: linear-gradient(to left, #800000, #7c0000, #780000, #740000, #700000);    position: absolute;
+    background-image: linear-gradient(to left, 
+    #800000, #780000, #700001, #690000, #610000);    
+    position: absolute;
     top: 148px;
     left: -4px;
     transform: skew(-12deg, 4deg);
@@ -60,7 +62,7 @@
         position: absolute;
         top: -34px;
         left:21px;
-        border-bottom: 20px solid #750000;
+        border-bottom: 20px solid #700000;
         border-left: 58px solid transparent;
         transform: skew(-45deg);
         .bumperShadow3 {
@@ -76,7 +78,7 @@
     }
 }
 #bumperLine {
-    background: #630000;
+    background: #450000;
     position: absolute;
     width: 100px;
     height: 0.5px;
@@ -178,7 +180,7 @@
     top: 6px;
 }
 #hoodLine {
-    background: #630000;
+    background: #450000;
     position: absolute;
     width: 94px;
     height: 0.5px;
@@ -187,13 +189,48 @@
     transform: skew(0deg, 2deg);
 }
 #hoodLine2 {
-    background: #630000;
+    background: #450000;
     position: absolute;
     width: 2.5px;
     height: 0.5px;
     top: 62.1px;
     left: 140.5px;
     transform: skew(0deg, 25deg);
+}
+#HoodLine {
+    height: 20px;
+    width:210px;
+    position: absolute;
+    top: 26px;
+    left: 46px;
+    transform: skew(-5deg, -8deg);
+    border-radius: 50% 50% 0% 10%/100% 20% 0% 18%;
+    background: $color-body;
+    border: 1px solid #450000;
+    border-bottom: transparent;
+    border-right: transparent;
+}
+#HoodLine2 {
+    width: 10px;
+    height: 15px;
+    border: 0.5px solid #450000;
+    position: absolute;
+    border-radius: 0% 0% 40% 0% / 0% 0% 50% 0%;
+    left: 256px;
+    top: -0.3px;
+    border-top: transparent;
+    border-left: transparent;
+    transform: skew(-35deg, -5deg);
+}
+#blinker {
+    width: 37px;
+    height: 6px;
+    background: orange;
+    position: absolute;
+    border-radius: 50%;
+    left: 232px;
+    top: 35px;
+    transform: skew(0deg, -2deg);
 }
 
 // Between wheels
