@@ -1,228 +1,228 @@
-// //wyjazd auta
-// .carOut {
-//     animation: getOff 8s 0.5s  linear;
+//wyjazd auta
+.carOut {
+    animation: getOff 8s 0.5s  linear;
+}
+@keyframes getOff {
+    0% {
+        opacity:0;
+    }
+    50% {
+        opacity: 1;
+    }
+    51% { transform: translate(1px, 1px) }
+    52% { transform: translate(-1px, -2px) } 
+    53% { transform: translate(-3px, 0px)}
+    54% { transform: translate(3px, 2px) }
+    55%{
+        margin-left: 0;
+    }
+    100%{
+        margin-left: -6000px;
+    }
+}
+//napęd przód
+.rotate {
+    animation: rotate 8s 4.5s linear 1 ;
+     }
+    @keyframes rotate {
+    0% {
+      transform: rotate(0deg)
+    }
+    20% {
+      transform: rotate(1060deg)
+    }
+    100% {
+        transform: rotate(860deg)
+    }
+  }
+//tylne koła startują
+  .rotateBack {
+    animation: rotateBack 8s 4.5s linear ;
+     }
+    @keyframes rotateBack {
+    from {
+      transform: rotate(0deg)
+    }
+    to {
+      transform: rotate(860deg)
+    }
+  }
+// logo z wydechu
+.exhaust {
+    animation: exhaust 7s 4.5s linear,
+    smog 7s 4.5s linear ;
+}
+@keyframes exhaust {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@keyframes smog {
+    0% {
+        transform: translate(-200%, 0%) rotate(180deg) skew(-20deg);
+    }
+    50% {
+        transform: scale(2) skew(-20deg);
+    }
+    60% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+// Animacja dla front car
+.carIn {
+    animation: helloCar 8s 8s linear both;
+}
+.carIn:hover {
+    animation-play-state: paused;
+  }
+@keyframes helloCar{
+    0% {
+        opacity:0;
+    }
+    2% {
+        transform: scale(0);
+    }
+    90% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    100% {
+        display: block;
+    }
+}
+//Światła
+.lightsOn {
+    animation: lightsOn 8s 9s linear;
+
+}
+@keyframes lightsOn {
+    0% {
+        background: #F8FF99;
+        box-shadow:0px 0px 25px #ffff0f;
+
+    }
+    50% {
+        box-shadow:0px 0px 25px #ffff0f;
+    }
+    100% {
+        box-shadow: 0px 0px 25px skyblue;
+        background: skyblue;
+    }
+}
+//Światła awaryjne
+.blinker {
+    animation: blinker 1s 15s linear infinite;
+}
+@keyframes blinker {
+    0%{
+        box-shadow: 0px 0px 25px #fff;
+        background: #dadada;
+    }
+    50% {
+        box-shadow: 0px 0px 25px #FF9A26;
+        background: #FF9A26;
+    }
+    100%{
+        box-shadow: 0px 0px 25px #fff;
+        background: #dadada;
+    }
+}
+
+//Swiatła halogeny 
+.halogenOn {
+    animation: halogenOn 1s linear infinite;
+}
+@keyframes halogenOn {
+    0% {
+        box-shadow: 0px 0px 25px #fff;
+
+    }
+    50% {
+        box-shadow: 0px 0px 0px #000;
+
+    }
+    100% {
+        box-shadow: 0px 0px 25px #fff;
+    }
+}
+
+//Otwarcie drzwi
+.openDoor {
+    animation: openDoor 6s 15s ease both;
+}
+@keyframes openDoor{
+ 0%{
+    opacity:0;
+    // display: none;
+ }
+ 99% {
+    opacity:1;
+    // display: block;
+ }
+ 100% {
+     opacity:0;
+ }
+}
+
+
+.tech1 {
+    animation: tech1 4s linear ,
+    shot 4s 16s linear ;
+}
+.tech2 {
+    animation: tech1 4s linear ,
+    shot 4s 17s linear ;
+}
+.tech3 {
+    animation: tech1 4s linear ,
+    shot 4s 18s linear ;
+}
+.tech4 {
+    animation: tech1 5s linear ,
+    shot 4s 19s ease ;
+}
+
+// .tech6 {
+//     animation: tech1 5s  linear ,
+//     shot 5s 26s linear ;
 // }
-// @keyframes getOff {
-//     0% {
-//         opacity:0;
-//     }
-//     50% {
-//         opacity: 1;
-//     }
-//     51% { transform: translate(1px, 1px) }
-//     52% { transform: translate(-1px, -2px) } 
-//     53% { transform: translate(-3px, 0px)}
-//     54% { transform: translate(3px, 2px) }
-//     55%{
-//         margin-left: 0;
-//     }
-//     100%{
-//         margin-left: -6000px;
-//     }
+// .tech7 {
+//     animation: tech1 5s  linear ,
+//     shot 5s 28s linear ;
 // }
-// //napęd przód
-// .rotate {
-//     animation: rotate 8s 4.5s linear 1 ;
-//      }
-//     @keyframes rotate {
-//     0% {
-//       transform: rotate(0deg)
-//     }
-//     20% {
-//       transform: rotate(1060deg)
-//     }
-//     100% {
-//         transform: rotate(860deg)
-//     }
-//   }
-// //tylne koła startują
-//   .rotateBack {
-//     animation: rotateBack 8s 4.5s linear ;
-//      }
-//     @keyframes rotateBack {
-//     from {
-//       transform: rotate(0deg)
-//     }
-//     to {
-//       transform: rotate(860deg)
-//     }
-//   }
-// // logo z wydechu
-// .exhaust {
-//     animation: exhaust 7s 4.5s linear,
-//     smog 7s 4.5s linear ;
-// }
-// @keyframes exhaust {
-//     from {
-//         opacity: 0;
-//     }
-//     to {
-//         opacity: 1;
-//     }
-// }
-// @keyframes smog {
-//     0% {
-//         transform: translate(-200%, 0%) rotate(180deg) skew(-20deg);
-//     }
-//     50% {
-//         transform: scale(2) skew(-20deg);
-//     }
-//     60% {
-//         opacity: 1;
-//     }
-//     100% {
-//         opacity: 0;
-//     }
+// .tech8 {
+//     animation: tech1 5s  linear ,
+//     shot 5s 30s linear ;
 // }
 
-// // Animacja dla front car
-// .carIn {
-//     animation: helloCar 8s 8s linear both;
-// }
-// .carIn:hover {
-//     animation-play-state: paused;
-//   }
-// @keyframes helloCar{
-//     0% {
-//         opacity:0;
-//     }
-//     2% {
-//         transform: scale(0);
-//     }
-//     90% {
-//         transform: scale(1);
-//         opacity: 1;
-//     }
-//     100% {
-//         display: block;
-//     }
-// }
-// //Światła
-// .lightsOn {
-//     animation: lightsOn 8s 9s linear;
-
-// }
-// @keyframes lightsOn {
-//     0% {
-//         background: #F8FF99;
-//         box-shadow:0px 0px 25px #ffff0f;
-
-//     }
-//     50% {
-//         box-shadow:0px 0px 25px #ffff0f;
-//     }
-//     100% {
-//         box-shadow: 0px 0px 25px skyblue;
-//         background: skyblue;
-//     }
-// }
-// //Światła awaryjne
-// .blinker {
-//     animation: blinker 1s 15s linear infinite;
-// }
-// @keyframes blinker {
-//     0%{
-//         box-shadow: 0px 0px 25px #fff;
-//         background: #dadada;
-//     }
-//     50% {
-//         box-shadow: 0px 0px 25px #FF9A26;
-//         background: #FF9A26;
-//     }
-//     100%{
-//         box-shadow: 0px 0px 25px #fff;
-//         background: #dadada;
-//     }
-// }
-
-// //Swiatła halogeny 
-// .halogenOn {
-//     animation: halogenOn 1s linear infinite;
-// }
-// @keyframes halogenOn {
-//     0% {
-//         box-shadow: 0px 0px 25px #fff;
-
-//     }
-//     50% {
-//         box-shadow: 0px 0px 0px #000;
-
-//     }
-//     100% {
-//         box-shadow: 0px 0px 25px #fff;
-//     }
-// }
-
-// //Otwarcie drzwi
-// .openDoor {
-//     animation: openDoor 6s 15s ease both;
-// }
-// @keyframes openDoor{
-//  0%{
-//     opacity:0;
-//     // display: none;
-//  }
-//  99% {
-//     opacity:1;
-//     // display: block;
-//  }
-//  100% {
-//      opacity:0;
-//  }
-// }
-
-
-// .tech1 {
-//     animation: tech1 4s linear ,
-//     shot 4s 16s linear ;
-// }
-// .tech2 {
-//     animation: tech1 4s linear ,
-//     shot 4s 17s linear ;
-// }
-// .tech3 {
-//     animation: tech1 4s linear ,
-//     shot 4s 18s linear ;
-// }
-// .tech4 {
-//     animation: tech1 5s linear ,
-//     shot 4s 19s ease ;
-// }
-
-// // .tech6 {
-// //     animation: tech1 5s  linear ,
-// //     shot 5s 26s linear ;
-// // }
-// // .tech7 {
-// //     animation: tech1 5s  linear ,
-// //     shot 5s 28s linear ;
-// // }
-// // .tech8 {
-// //     animation: tech1 5s  linear ,
-// //     shot 5s 30s linear ;
-// // }
-
-// //wylot technologi z wnętrza auta
-// @keyframes tech1 {
-//     from {
-//         opacity: 0;
-//     }
-//     to {
-//         opacity: 1;
-//     }
-// }
-// @keyframes shot {
-//     0% {
-//         transform: translate(-250%, 280%) rotate(180deg) skew(-20deg);
-//     }
-//     50% {
-//         transform: scale(2.5);
-//     }
-//     60% {
-//         opacity: 1;
-//     }
-//     100% {
-//         opacity: 0;
-//     }
-// }
+//wylot technologi z wnętrza auta
+@keyframes tech1 {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@keyframes shot {
+    0% {
+        transform: translate(-250%, 280%) rotate(180deg) skew(-20deg);
+    }
+    50% {
+        transform: scale(2.5);
+    }
+    60% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
 

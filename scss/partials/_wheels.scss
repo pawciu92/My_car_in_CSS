@@ -23,6 +23,17 @@
     transform: skew(0deg, -2.5deg);
     height: 5.5em;
 }
+.mudguardShadow {
+    background-image: linear-gradient(to top, 
+    #800000, #780000, #700001, #690000, #610000);
+    border-top-left-radius: 50px * 2;
+    border-top-right-radius: 50px * 2;
+    position: absolute;
+    width: 8em;
+    height: 5.8em;
+    top:-11.5px;
+    left: -10.2px;
+}
 .mudguard{
     background: #000;
     border-top-left-radius: 50px * 2;

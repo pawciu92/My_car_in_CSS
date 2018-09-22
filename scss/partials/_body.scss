@@ -8,10 +8,10 @@
 }
 
 .car {
-    // opacity:0; //kom do usunięcia
+    opacity:0; //kom do usunięcia
 }
 .carBody {
-    position: relative;
+    // position: relative;
 }
 
 // Halogen in bumper and all Front
@@ -191,17 +191,17 @@
 #hoodLine2 {
     background: #450000;
     position: absolute;
-    width: 2.5px;
+    width: 5.5px;
     height: 0.5px;
-    top: 62.1px;
-    left: 140.5px;
+    top: 16.4px;
+    left: 32.3px;
     transform: skew(0deg, 25deg);
 }
 #HoodLine {
     height: 20px;
     width:210px;
     position: absolute;
-    top: 26px;
+    top: 25.5px;
     left: 46px;
     transform: skew(-5deg, -8deg);
     border-radius: 50% 50% 0% 10%/100% 20% 0% 18%;
@@ -212,12 +212,12 @@
 }
 #HoodLine2 {
     width: 10px;
-    height: 15px;
+    height: 14.5px;
     border: 0.5px solid #450000;
     position: absolute;
     border-radius: 0% 0% 40% 0% / 0% 0% 50% 0%;
     left: 256px;
-    top: -0.3px;
+    top: -0.8px;
     border-top: transparent;
     border-left: transparent;
     transform: skew(-35deg, -5deg);
@@ -271,19 +271,66 @@
 .roofFront {
     height: 90px;
     width:220px;
-    border: 1px solid $color-body;
     position: absolute;
     top: 215px;
     left: 340px;
     transform: skew(-40deg, -1.5deg);
     border-radius: 290% 0% 0% 0%/450% 0% 0% 0%;
     background: $color-body;
-
+    border-bottom: 4px solid $color-body;
+    .ventilation {
+        background: #000;
+        width: 18px;
+        height: 33px;
+        position: absolute;
+        top: 53px;
+        left: 0px;
+        transform: skew(-38deg);
+    }
+}
+.firstWiperHolder {
+    background: #000;
+    width:38px;
+    height: 5px;
+    position: absolute;
+    border-radius: 50%;
+    top:30px;
+    left: -25px;
+    transform: skew(50deg);
+    .firstWiper {
+        border-left: 4px solid transparent;
+        border-right: 4px solid transparent;
+        border-bottom: 9px solid #000;
+        position: absolute;
+        border-radius: 40%;
+        transform: rotate(262deg);
+        top: -3px;
+        left: 0.5px;
+    }
+}
+.secondWiperHolder {
+    background: #000;
+    width:28px;
+    height: 5px;
+    position: absolute;
+    border-radius: 30%;
+    top:27.5px;
+    left: -22px;
+    transform: skew(50deg, -2deg);
+    .secondWiper {
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+        border-bottom: 12px solid #000;
+        position: absolute;
+        border-radius: 40%;
+        transform: rotate(248deg);
+        top: -3px;
+        left: 9px;
+    }
 }
 .roofBack {
     height: 85px;
     width:200px;
-    border: 1px solid $color-body;
     position: absolute;
     top: 209px;
     left: 650px;
@@ -294,14 +341,14 @@
 }
 .roofMiddle {
     height: 92px;
-    width:295px;
-    border: 1px solid $color-body;
+    width:269px;
     position: absolute;
-    top: 212px;
-    left: 425px;
+    top: 211.5px;
+    left: 447px;
     transform: skew(0deg, -1.5deg);
     border-radius: 50%/25%;
     background: $color-body;
+    border-bottom: 4px solid $color-body;
 }
 .trunk {
     width: 100px;
